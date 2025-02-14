@@ -30,22 +30,21 @@
             </div>
         </div>
     </div>
-
-    <audio id="mysong">
+    <audio id="mySong">
         <source src="audio/music.mp3" type="audio/mp3"/>
     </audio>
 
-    ]<script>
-        let mysong= document.getElementById("mysong");
+    <script>
+        let mySong= document.getElementById("mySong");
         let icon= document.getElementById("icon");
         
         icon.onclick= function () {
-            if (mysong.paused) {
-                mysong.play();
-                icon.scr="./images/pause.png";
+            if (mySong.paused) {
+                mySong.play();
+                icon.src="./images/pause.png";
             } else {
-                mysong.pause();
-                icon.scr="./images/play.png";
+                mySong.pause();
+                icon.src="./images/play.png";
             }
         };
     </script>
